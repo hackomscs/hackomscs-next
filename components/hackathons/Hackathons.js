@@ -4,8 +4,8 @@ import HackathonCarousel from 'components/hackathons/HackathonCarousel';
 export default function Hackathons() {
   return (
     <>
-      <Header title="Hackathons" rightJustify givenId="hackathons"  />
-      <HackathonCarousel />
+      <Header title="FAQ" rightJustify givenId="faq"  />
+      {/* <HackathonCarousel /> */}
     </>
   )
 }

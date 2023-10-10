@@ -67,7 +67,7 @@ function NavBar() {
     <NavContainer>
       <NavContents>
         <NavItem><Link href="#about">About Us</Link></NavItem>
-        <NavItem><Link href="#hackathons">Hackathons</Link></NavItem>
+        <NavItem><Link href="#faq">FAQ</Link></NavItem>
         <NavItem><Link href="#team">Meet the Team</Link></NavItem>
         <NavItem><Link href="#support">Support Us</Link></NavItem>
         <NavItem><Link href="#sponsors">Sponsors</Link></NavItem>
