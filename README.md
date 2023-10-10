@@ -1,9 +1,4 @@
-# HackUTD Organizer Site
-
-## Design 
-
-* [Figma](https://www.figma.com/file/CcHbcrvp31oWjqgAvNP3kR/HackUTD-Organizer-Site?node-id=0%3A1) (if you have access)
-
+# HackOMSCS Organizer Site
 
 ## Code 
 
@@ -14,7 +9,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Run the development server:
 
 ```bash
-yarn && yarn dev
+npm install
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -36,7 +32,7 @@ This site's philosophy is to use as little external packages as possible. Custom
 
 ## Contributions
 
-1. **Make or pick an issue to work on.** If you'd like to contribute on a problem or feature you've thought of yourself, first [make an issue](https://github.com/acmutd/hackutd-org-site/issues), and wait until it receives approval from a site adminstrator. Otherwise, you're free to pick up an existing issue.
+1. **Make or pick an issue to work on.** If you'd like to contribute on a problem or feature you've thought of yourself, first [make an issue](https://github.com/vishrut-goel/omscs-hackathon), and wait until it receives approval from a site adminstrator. Otherwise, you're free to pick up an existing issue.
 
 2. **Make a branch.** Create a git branch with a descriptive name to work on your specific code. 
 
@@ -46,10 +42,8 @@ This site's philosophy is to use as little external packages as possible. Custom
 
 5. **Make a pull request.** This way, site administrators can look at & test your code before merging it to the main branch to be included on the deployed site. 
 
-And of course, contact the main site administrator [Nathaniel Brown](https://github.com/natesabrown) if you have any questions!
+And of course, contact the main site administrator [Vishrut Goel](https://github.com/vishrut-goel) if you have any questions!
 
 ## Credits
 
-Special thanks to:
-* [Abdullah Hasani](https://github.com/abdullah50053) for providing technical advice and helping to host the website. 
-* [Dylan Nguyen](https://www.linkedin.com/in/dylancnguyen) for providing design advice. 
+Special thanks to the HackUTD team for the open source template: [HackUTD.co](https://hackutd.co/)

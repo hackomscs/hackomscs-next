@@ -152,18 +152,18 @@ export default function Hero() {
           <WelcomeContent>
             <AnimatedLogo />
             <SupplementalText top>We are</SupplementalText>
-            <Title>Hack OMSCS</Title>
+            <Title>HackOMSCS</Title>
             <SupplementalText>Georgia Tech&apos;s OMSCS&apos;s 1st ever Hackathon.</SupplementalText>
             {/* Enable once we have a website set up. */}
             {/* <SiteButton /> */}
           </WelcomeContent>
         </ExperimentalFlexContainer>
         <StartButton />
-        <SkylineContainer>
+        {/* <SkylineContainer>
             {dark && <Skyline src={'svg/skyline_dark.svg'}/>}
             {!dark && <Skyline src={'svg/skyline.svg'} />}
             <ShadowHider />
-        </SkylineContainer>
+        </SkylineContainer> */}
         {showSparkles && <Sparkles />}
         <Background />
       </Container>

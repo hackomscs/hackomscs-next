@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Hack OMSCS | OMSCS&apos;s First Hackathon</title>
+      <title>HackOMSCS | OMSCS&apos;s First Hackathon</title>
       <meta 
         name="description" 
         content="We plan to host OMSCS&apos;s 1st ever Hackathon"
