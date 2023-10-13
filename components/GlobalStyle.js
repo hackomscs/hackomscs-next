@@ -26,7 +26,7 @@ export default createGlobalStyle`
       --hackathon-chooser-bg: #444444;
       --sheet-bg: #333333;
     `:  `
-      --main-gradient: linear-gradient(180deg, #FBB321 3.05%, rgba(27, 171, 238, .8) 100%);
+      --main-gradient: linear-gradient(180deg, rgba(27, 171, 238, .8), rgba(0, 0, 0, .2) 50%, #FBB321 100%);
       --primary: black;
       --opposite: white;
       --raised-button: white;

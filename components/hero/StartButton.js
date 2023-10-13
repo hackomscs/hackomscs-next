@@ -48,7 +48,7 @@ const Button = styled.div`
 
 function StartButton() {
   return (
-    <Link href="#mission">
+    <Link href="#about">
     <Button>
       <img src={"svg/tri_button.svg"} alt="triangular button to move to the next section"></img>
     </Button>

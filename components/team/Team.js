@@ -6,7 +6,7 @@ export default function Team() {
   return (
     <>
     <Header title="Meet the Team" givenId="team" />
-    <DirectorQuote />
+    {/* <DirectorQuote /> */}
     <TeamCarousel />
     </>
   )

@@ -33,7 +33,8 @@ const Container = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  #grid-template-columns: 1fr 1fr;
+  max-width:700px;
   grid-gap: 25px;
   // align-items: center;
   margin-top: 50px;
@@ -104,19 +105,17 @@ export default function Mission() {
     <Container>
       <Header title="About Us" givenId="about" />
       <Grid>
-        <ImageContainer>
+        {/* <ImageContainer>
           <TeamImage src={default_group} objectFit="cover" layout="fill" alt="a team picture of the HackUTD organizers" />
-        </ImageContainer>
+        </ImageContainer> */}
         <Description>
           <p>
-            Hack OMSCS is a 24-hour virtual hackathon. This event aims to join OMSCS students from around the world to <InlineGradient>solve novel challenges,</InlineGradient> win exciting prizes, and meet loads of new friends! This event is open to everyone and is an opportunity for students of all backgrounds, skill levels, and experiences to innovate and showcase their ideas.
+            Hack OMSCS is a free, 24-hour, virtual hackathon taking place January 12-13. This event aims to join OMSCS students from around the world to <InlineGradient>solve novel challenges,</InlineGradient> win exciting prizes, and meet loads of new friends! This event is open to everyone and is an opportunity for students of all backgrounds, skill levels, and experiences to innovate and showcase their ideas.
           </p>
           <p style={{ marginTop: 20 }}>
             Whether you are a first-time hacker or a seasoned veteran, we encourage you to enter hackOMSCS with <InlineGradient>enthusiasm and curiosity.</InlineGradient> Our hope is that you <InlineGradient>challenge yourself</InlineGradient> with a fun project, learn something new along the way, and feel proud of what you accomplished at the end of it all.
-
-
           </p>
-          <LearnMore onClick={() => setShowMore(true)}>More about us</LearnMore>
+          {/* <LearnMore onClick={() => setShowMore(true)}>More about us</LearnMore> */}
           <More isShown={showMore} callback={() => setShowMore(false)} />
         </Description>
       </Grid>

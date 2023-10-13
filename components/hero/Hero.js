@@ -8,7 +8,10 @@ import AnimatedLogo from 'components/hero/AnimatedLogo';
 import StartButton from 'components/hero/StartButton';
 import Sparkles from 'components/Sparkles';
 import SiteButton from 'components/hero/SiteButton';
+//import SmallDivider from 'components/shared/SmallDivider';
+
 import DarkModeToggle from 'components/shared/DarkModeToggle';
+import RegisterButton from 'components/support/RegisterButton';
 
 import ThemeContext from 'context/ThemeContext';
 
@@ -52,8 +55,7 @@ const WelcomeContent = styled.div`
   // defines size of logo, ik it's hacky
   // !imporant necessary to get around lottie restrictions, much apology
   div {
-    height: 20vh !important;
-    min-height: 150px !important;
+    min-height: 36px !important;
   }
   ${CONSTRAINTS.DEFAULT_BP} {
     div {
@@ -155,15 +157,19 @@ export default function Hero() {
             <Title>HackOMSCS</Title>
             <SupplementalText>Georgia Tech&apos;s OMSCS&apos;s 1st ever Hackathon.</SupplementalText>
             {/* Enable once we have a website set up. */}
+            <RegisterButton />
             {/* <SiteButton /> */}
           </WelcomeContent>
         </ExperimentalFlexContainer>
         <StartButton />
+        
         {/* <SkylineContainer>
+        
             {dark && <Skyline src={'svg/skyline_dark.svg'}/>}
             {!dark && <Skyline src={'svg/skyline.svg'} />}
             <ShadowHider />
         </SkylineContainer> */}
+        
         {showSparkles && <Sparkles />}
         <Background />
       </Container>

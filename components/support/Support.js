@@ -53,7 +53,7 @@ export default function Support() {
       <SocialButtons />
       <SubHeader>Sponsor</SubHeader>
       <Description>
-        Interested in sponsoring HackUTD for our next hackathon and beyond?
+        Interested in sponsoring HackOMSCS for our next hackathon and beyond?
         Get in touch with our <InlineGradient>Industry Team</InlineGradient> and learn how supporting HackUTD 
         will benefit you!
       </Description>
