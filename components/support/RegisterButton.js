@@ -14,7 +14,6 @@ const Button = styled.a`
   filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.25));
   padding: 20px 30px;
   border-radius: 20px;
-
   transition: filter 0.4s, transform 0.4s;
 
   svg {
@@ -39,7 +38,7 @@ const Text = styled.div`
   font-weight: 600;
 `
 
-function SponsorshipPacketButton() {
+function RegisterButton() {
   return (
     <Button href={LINKS.INDUSTRY_MAIL_LINK}>
       <Text>Register Now!</Text>
@@ -47,4 +46,4 @@ function SponsorshipPacketButton() {
   )
 }
 
-export default SponsorshipPacketButton;
+export default RegisterButton;

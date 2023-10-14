@@ -73,7 +73,6 @@ const TeamImage = styled(Image)`
 `
 
 const Description = styled.div`
-  margin-top: 30px;
 
   ${CONSTRAINTS.DEFAULT_BP} {
     margin-top: 0px;
@@ -110,7 +109,7 @@ export default function Mission() {
         </ImageContainer> */}
         <Description>
           <p>
-            Hack OMSCS is a free, 24-hour, virtual hackathon taking place January 12-13. This event aims to join OMSCS students from around the world to <InlineGradient>solve novel challenges,</InlineGradient> win exciting prizes, and meet loads of new friends! This event is open to everyone and is an opportunity for students of all backgrounds, skill levels, and experiences to innovate and showcase their ideas.
+            Hack OMSCS is a free, 24-hour, virtual hackathon. This event aims to join OMSCS students from around the world to <InlineGradient>solve novel challenges,</InlineGradient> win exciting prizes, and meet loads of new friends! This event is open to everyone and is an opportunity for students of all backgrounds, skill levels, and experiences to innovate and showcase their ideas.
           </p>
           <p style={{ marginTop: 20 }}>
             Whether you are a first-time hacker or a seasoned veteran, we encourage you to enter hackOMSCS with <InlineGradient>enthusiasm and curiosity.</InlineGradient> Our hope is that you <InlineGradient>challenge yourself</InlineGradient> with a fun project, learn something new along the way, and feel proud of what you accomplished at the end of it all.

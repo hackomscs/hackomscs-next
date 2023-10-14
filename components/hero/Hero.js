@@ -97,7 +97,6 @@ const SupplementalText = styled.p`
 const ExperimentalFlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: space-between;
 `
 
@@ -155,11 +154,11 @@ export default function Hero() {
             <AnimatedLogo />
             <SupplementalText top>We are</SupplementalText>
             <Title>HackOMSCS</Title>
-            <SupplementalText>Georgia Tech&apos;s OMSCS&apos;s 1st ever Hackathon.</SupplementalText>
+            <SupplementalText>Georgia Tech OMSCS&apos;s 1st ever Hackathon.</SupplementalText>
             {/* Enable once we have a website set up. */}
-            <RegisterButton />
             {/* <SiteButton /> */}
           </WelcomeContent>
+          <RegisterButton />
         </ExperimentalFlexContainer>
         <StartButton />
         

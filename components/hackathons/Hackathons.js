@@ -52,7 +52,7 @@ export default function Hackathons() {
 
   return (
     <>
-      <Header title="FAQ" rightJustify givenId="faq" />
+      <Header title="Frequently Asked Questions" rightJustify givenId="faq" />
       <Accordion allowZeroExpanded className="w-full" preExpanded={["id2"]}>
         {content.map((contenido, indx) => (
           <AccordionItem
