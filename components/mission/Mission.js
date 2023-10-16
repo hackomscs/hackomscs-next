@@ -108,7 +108,7 @@ export default function Mission() {
       <Header title="About Us" givenId="about" />
       <Grid>
       <Quote>
-          "I learned more in one weekend than I did in the last month of lectures!"
+        &quot;I learned more in one weekend than I did in the last month of lectures!&quot;
       </Quote>
         {/* <ImageContainer>
           <TeamImage src={default_group} objectFit="cover" layout="fill" alt="a team picture of the HackUTD organizers" />

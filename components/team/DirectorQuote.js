@@ -92,7 +92,7 @@ function DirectorQuote() {
       </DirectorImage> */}
       <EncouragingText>
         <Message>
-          We're currently looking for more team members to join our worldwide team! Please fill out an application <VolunteerAppLink href={LINKS.VOLUNTEER}>here.</VolunteerAppLink> Without our team members, <InlineGradient>none of this would be possible.</InlineGradient>
+          We&apos;re currently looking for more team members to join our worldwide team! Please fill out an application <VolunteerAppLink href={LINKS.VOLUNTEER}>here.</VolunteerAppLink> Without our team members, <InlineGradient>none of this would be possible.</InlineGradient>
         </Message>
       </EncouragingText>
     </Wrapper>
