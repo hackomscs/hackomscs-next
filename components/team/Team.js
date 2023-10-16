@@ -5,8 +5,8 @@ import TeamCarousel from 'components/team/TeamCarousel';
 export default function Team() {
   return (
     <>
-    <Header title="Meet the Team" givenId="team" />
-    {/* <DirectorQuote /> */}
+    <Header title="Join Our Team" givenId="team" />
+    <DirectorQuote />
     <TeamCarousel />
     </>
   )

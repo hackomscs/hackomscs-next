@@ -26,7 +26,6 @@ export default function Main() {
       <Team />
       <Support />
       <Sponsors />
-      <OpenSource />
       <Footer />
     </Container>
   )

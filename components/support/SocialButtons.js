@@ -69,10 +69,10 @@ const SocialButton = ({ Image, link, at, altText }) => (
 function SocialButtons() {
   return (
     <Container>
-      <SocialButton Image={FaInstagram} at="@hackutd" link={LINKS.INSTA} altText="Instagram Logo"/>
-      <SocialButton Image={FaTwitter} at="@hackutd" link={LINKS.TWITTER} altText="Twitter Logo"/>
-      <SocialButton Image={FaLinkedin} at="@hackutd" link={LINKS.LINKEDIN} altText="LinkedIn Logo"/>
-      <SocialButton Image={FaTiktok} at="@hackutd" link={LINKS.抖音} altText="Tiktok Logo"/>
+      <SocialButton Image={FaInstagram} at="@hackomscs" link={LINKS.INSTA} altText="Instagram Logo"/>
+      <SocialButton Image={FaTwitter} at="@hackomscs" link={LINKS.TWITTER} altText="Twitter Logo"/>
+      <SocialButton Image={FaLinkedin} at="@hackomscs" link={LINKS.LINKEDIN} altText="LinkedIn Logo"/>
+      <SocialButton Image={FaTiktok} at="@hackomscs" link={LINKS.抖音} altText="Tiktok Logo"/>
     </Container>
   )
 }

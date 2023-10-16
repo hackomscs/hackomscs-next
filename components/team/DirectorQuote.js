@@ -5,6 +5,8 @@ import CONSTRAINTS from 'constants/constraints';
 
 import mikul from 'assets/img/mikey.jpg';
 
+import LINKS from 'constants/links';
+
 import InlineGradient from 'components/shared/InlineGradient';
 
 const Wrapper = styled.div`
@@ -16,8 +18,6 @@ const Wrapper = styled.div`
   justify-content: space-between; */
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 35px;
   margin-bottom: 60px;
 
   ${CONSTRAINTS.DEFAULT_BP} {
@@ -78,22 +78,22 @@ const Title = styled.p`
   font-weight: 700;
 `
 
+const VolunteerAppLink = styled.a`
+  font-weight: 700;
+  color: #D275FE;
+`
+
+
 function DirectorQuote() {
   return (
     <Wrapper>
-      <DirectorImage>
+      {/* <DirectorImage>
         <Image src={mikul} width={300} height={300} alt="HackUTD's Director"/>
-      </DirectorImage>
+      </DirectorImage> */}
       <EncouragingText>
         <Message>
-          Our team works from the start of the year to deliver an excellent hackathon experience.
-          Without our team members, <InlineGradient>none of this would be possible.</InlineGradient>
+          We're currently looking for more team members to join our worldwide team! Please fill out an application <VolunteerAppLink href={LINKS.VOLUNTEER}>here.</VolunteerAppLink> Without our team members, <InlineGradient>none of this would be possible.</InlineGradient>
         </Message>
-        <br />
-        <Citation>
-          <Name><Hyphen>–</Hyphen>Michael Zhao</Name>
-          <Title>Director, HackUTD X</Title>
-        </Citation>
       </EncouragingText>
     </Wrapper>
   )

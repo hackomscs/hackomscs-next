@@ -71,7 +71,6 @@ function NavBar() {
         <NavItem><Link href="#team">Meet the Team</Link></NavItem>
         <NavItem><Link href="#support">Support Us</Link></NavItem>
         <NavItem><Link href="#sponsors">Sponsors</Link></NavItem>
-        <NavItem><Link href="#open-source">Open Source</Link></NavItem>
       </NavContents>
     </NavContainer>
     <MobileNav/>

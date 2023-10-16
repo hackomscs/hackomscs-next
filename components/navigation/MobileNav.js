@@ -123,12 +123,11 @@ function MobileNav() {
             </ExitButton>
           </ExitContainer>
           <Items>
-            <Link href="#mission"><Item onClick={hideMobileNav}>Our Mission</Item></Link>
-            <Link href="#hackathons"><Item onClick={hideMobileNav}>Hackathons</Item></Link>
-            <Link href="#team"><Item onClick={hideMobileNav}>Meet the Team</Item></Link>
+            <Link href="#about"><Item onClick={hideMobileNav}>About Us</Item></Link>
+            <Link href="#faq"><Item onClick={hideMobileNav}>FAQ</Item></Link>
+            <Link href="#team"><Item onClick={hideMobileNav}>Join the Team</Item></Link>
             <Link href="#support"><Item onClick={hideMobileNav}>Support Us</Item></Link>
             <Link href="#sponsors"><Item onClick={hideMobileNav}>Sponsors</Item></Link>
-            <Link href="#open-source"><Item onClick={hideMobileNav}>Open Source</Item></Link>
           </Items>
         </MobileSelector>
       )}

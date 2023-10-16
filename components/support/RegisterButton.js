@@ -41,7 +41,7 @@ const Text = styled.div`
 function RegisterButton() {
   return (
     <Button href={LINKS.INDUSTRY_MAIL_LINK}>
-      <Text>Register Now!</Text>
+      <Text>Registration Soon</Text>
     </Button>
   )
 }

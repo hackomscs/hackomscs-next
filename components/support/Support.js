@@ -54,13 +54,13 @@ export default function Support() {
       <SubHeader>Sponsor</SubHeader>
       <Description>
         Interested in sponsoring HackOMSCS for our next hackathon and beyond?
-        Get in touch with our <InlineGradient>Industry Team</InlineGradient> and learn how supporting HackUTD 
+        Get in touch with our <InlineGradient>Sponsorship Team</InlineGradient> and learn how supporting HackOMSCS 
         will benefit you!
       </Description>
       <GetInTouchButton />
-      <SmallDivider />
+      {/* <SmallDivider />
       <SubHeader partner>Partner Hackathons</SubHeader>
-      <PartnerHackathons />
+      <PartnerHackathons /> */}
     </Container>
     </>
   )

@@ -37,7 +37,7 @@ const Grid = styled.div`
   max-width:700px;
   grid-gap: 25px;
   // align-items: center;
-  margin-top: 50px;
+  margin-top: 25px;
 
   @media screen and (max-width: 850px) {
     grid-template-columns: 1fr;
@@ -95,6 +95,9 @@ const LearnMore = styled.p`
     cursor: pointer;
   }
 `
+const Quote = styled.h3`
+  text-align: center;
+`
 
 export default function Mission() {
   const [showMore, setShowMore] = useState(false);
@@ -104,12 +107,16 @@ export default function Mission() {
     <Container>
       <Header title="About Us" givenId="about" />
       <Grid>
+      <Quote>
+          "I learned more in one weekend than I did in the last month of lectures!"
+      </Quote>
         {/* <ImageContainer>
           <TeamImage src={default_group} objectFit="cover" layout="fill" alt="a team picture of the HackUTD organizers" />
         </ImageContainer> */}
         <Description>
+          
           <p>
-            Hack OMSCS is a free, 24-hour, virtual hackathon. This event aims to join OMSCS students from around the world to <InlineGradient>solve novel challenges,</InlineGradient> win exciting prizes, and meet loads of new friends! This event is open to everyone and is an opportunity for students of all backgrounds, skill levels, and experiences to innovate and showcase their ideas.
+            The average hacker learns so much, therefore we want to bring that experience to OMSCS! Hack OMSCS is a free, 24-hour, virtual hackathon. This event aims to join OMSCS students from around the world to <InlineGradient>solve novel challenges,</InlineGradient> win exciting prizes, and meet loads of new friends! This event is open to everyone and is an opportunity for students of all backgrounds, skill levels, and experiences to innovate and showcase their ideas.
           </p>
           <p style={{ marginTop: 20 }}>
             Whether you are a first-time hacker or a seasoned veteran, we encourage you to enter hackOMSCS with <InlineGradient>enthusiasm and curiosity.</InlineGradient> Our hope is that you <InlineGradient>challenge yourself</InlineGradient> with a fun project, learn something new along the way, and feel proud of what you accomplished at the end of it all.

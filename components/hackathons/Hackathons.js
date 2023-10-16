@@ -1,5 +1,11 @@
 import Header from 'components/shared/Header';
+import styled from 'styled-components';
+import CONSTRAINTS from 'constants/constraints';
+
 import React, { useState } from "react";
+import 'react-accessible-accordion/dist/fancy-example.css';
+
+
 import {
   Accordion,
   AccordionItem,
@@ -8,38 +14,57 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
+const Container = styled.div`
+  // flexy
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: ${CONSTRAINTS.DEFAULT};
+  margin-bottom: 50px;
+
+  ${CONSTRAINTS.DEFAULT_BP} {
+    width: ${CONSTRAINTS.DEFAULT_MOBILE_WIDTH};
+  }
+`
+
+const AccordionHeading = styled(AccordionItemHeading)`
+  color: var(--subheader);
+`
+
 export default function Hackathons() {
   const content = [
     {
-      button: "How many team members can I invite?",
+      button: "What is hackOMSCS?",
       panel:
-        "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
+        "HackOMSCS is a 24-hour virtual hackathon taking place in January 2024 (Date TBD). HackOMSCS is free to register and participate. It is entirely student run, and open to anyone!",
       uuid: "id1",
     },
     {
-      button: "What is the maximum file upload size?",
+      button: "What is a hackathon?",
       panel:
-        "No more than 2GB. All files in your account must fit your allotted storage space.",
+        "Hackathons are often described as a hybrid between a career fair and a science fair. A creative community of programmers - from novices to experienced - come together for 24 hours to make amazing projects. The projects are then judged by tech professionals from industry and academia, and winners receive awesome prizes!",
       uuid: "id2",
     },
     {
-      button: "How do I reset my password?",
+      button: "It's My First Hackathon. Should I apply?",
       panel:
-        "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.",
+        "Yes! Experience is not required. Hackathons are open creative and learning environments for everyone. There is also a competition category for first hack!",
       uuid: "id3",
     },
     {
-      button: "Can I cancel my subscription?",
+      button: "I don't know anyone. How can I join a team?",
       panel:
-        "Yes! Send us a message and we’ll process your request no questions asked.",
+        "No worries! We will have a team formation event at the start of the hackathon. The maxiumum number is 4 people per team - but you can hack solo if you'd like!",
       uuid: "id4",
     },
     {
-      button: "Do you provide additional support?",
+      button: "I have more questions...",
       panel:
-        "Chat and email support is available 24/7. Phone lines are open during normal business hours.",
-      uuid: "id5",
+        "Please email us at support@hackomscs.com",
+      uuid: "id10",
     },
+
+    
   ];
 
   const [activeIndex, setActiveIndex] = useState(1);
@@ -53,7 +78,8 @@ export default function Hackathons() {
   return (
     <>
       <Header title="Frequently Asked Questions" rightJustify givenId="faq" />
-      <Accordion allowZeroExpanded className="w-full" preExpanded={["id2"]}>
+      <Container>
+      <Accordion allowMultipleExpanded allowZeroExpanded className="w-full">
         {content.map((contenido, indx) => (
           <AccordionItem
             key={indx}
@@ -61,7 +87,7 @@ export default function Hackathons() {
             uuid={contenido.uuid}
             className="border-b-[1px] py-[15.7px]"
           >
-            <AccordionItemHeading className="" onClick={() => handleClick(indx)}>
+            <AccordionHeading className="" onClick={() => handleClick(indx)}>
               <AccordionItemButton className="flex justify-between items-center">
                 <h1
                   className={
@@ -73,13 +99,14 @@ export default function Hackathons() {
                   {contenido.button}
                 </h1>
               </AccordionItemButton>
-            </AccordionItemHeading>
+            </AccordionHeading>
             <AccordionItemPanel className="pt-[5px] ">
               <p className="text-[#787887]">{contenido.panel}</p>
             </AccordionItemPanel>
           </AccordionItem>
         ))}
       </Accordion>
+      </Container>
 
     </>
   )
