@@ -40,8 +40,8 @@ const Text = styled.div`
 
 function RegisterButton() {
   return (
-    <Button href={LINKS.INDUSTRY_MAIL_LINK}>
-      <Text>Registration Soon</Text>
+    <Button href ="https://my.mlh.io/oauth/authorize?client_id=LO02M-OMjyeeqM8smtZhOgFF-IHAxtw_nzpr_4T1lHs&redirect_uri=https%3A%2F%2Fhackomscs.com%2Fmymlh-callback&response_type=token">
+      <Text>Register Now!</Text>
     </Button>
   )
 }

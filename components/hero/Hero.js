@@ -169,7 +169,7 @@ export default function Hero() {
             <ShadowHider />
         </SkylineContainer> */}
         
-        {showSparkles && <Sparkles />}
+        {/* {showSparkles && <Sparkles />} */}
         <Background />
       </Container>
   )
