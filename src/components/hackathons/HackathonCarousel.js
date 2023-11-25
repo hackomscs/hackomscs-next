@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react"
-import styled from "styled-components"
-import { FaChevronRight } from "react-icons/fa"
-import { HackBubble } from "components/hackathons/HackathonBubble"
+import { useEffect, useState } from 'react'
+import styled from 'styled-components'
+import { FaChevronRight } from 'react-icons/fa'
+import { HackBubble } from 'components/hackathons/HackathonBubble'
 
-import CONSTRAINTS from "constants/constraints"
-import HACKATHON_DATA from "constants/hackathon_data"
+import CONSTRAINTS from 'constants/constraints'
+import HACKATHON_DATA from 'constants/hackathon_data'
 
 const TopWrapper = styled.div`
     margin-top: 40px;

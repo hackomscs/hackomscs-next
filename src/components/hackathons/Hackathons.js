@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 import Header from '../../components/shared/Header';
 import styled from 'styled-components';
@@ -13,7 +13,7 @@ import {
   AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
-} from "react-accessible-accordion";
+} from 'react-accessible-accordion';
 
 const Container = styled.div`
   // flexy
@@ -35,34 +35,34 @@ const AccordionHeading = styled(AccordionItemHeading)`
 export default function Hackathons() {
   const content = [
     {
-      button: "What is hackOMSCS?",
+      button: 'What is hackOMSCS?',
       panel:
-        "HackOMSCS is a 24-hour virtual hackathon taking place in January 2024 (Date TBD). HackOMSCS is free to register and participate. It is entirely student run, and open to anyone!",
-      uuid: "id1",
+        'HackOMSCS is a 24-hour virtual hackathon taking place in January 2024 (Date TBD). HackOMSCS is free to register and participate. It is entirely student run, and open to anyone!',
+      uuid: 'id1',
     },
     {
-      button: "What is a hackathon?",
+      button: 'What is a hackathon?',
       panel:
-        "Hackathons are often described as a hybrid between a career fair and a science fair. A creative community of programmers - from novices to experienced - come together for 24 hours to make amazing projects. The projects are then judged by tech professionals from industry and academia, and winners receive awesome prizes!",
-      uuid: "id2",
+        'Hackathons are often described as a hybrid between a career fair and a science fair. A creative community of programmers - from novices to experienced - come together for 24 hours to make amazing projects. The projects are then judged by tech professionals from industry and academia, and winners receive awesome prizes!',
+      uuid: 'id2',
     },
     {
-      button: "It's My First Hackathon. Should I apply?",
+      button: 'It\'s My First Hackathon. Should I apply?',
       panel:
-        "Yes! Experience is not required. Hackathons are open creative and learning environments for everyone. There is also a competition category for first hack!",
-      uuid: "id3",
+        'Yes! Experience is not required. Hackathons are open creative and learning environments for everyone. There is also a competition category for first hack!',
+      uuid: 'id3',
     },
     {
-      button: "I don't know anyone. How can I join a team?",
+      button: 'I don\'t know anyone. How can I join a team?',
       panel:
-        "No worries! We will have a team formation event at the start of the hackathon. The maxiumum number is 4 people per team - but you can hack solo if you'd like!",
-      uuid: "id4",
+        'No worries! We will have a team formation event at the start of the hackathon. The maxiumum number is 4 people per team - but you can hack solo if you\'d like!',
+      uuid: 'id4',
     },
     {
-      button: "I have more questions...",
+      button: 'I have more questions...',
       panel:
-        "Please email us at support@hackomscs.com",
-      uuid: "id10",
+        'Please email us at support@hackomscs.com',
+      uuid: 'id10',
     },
 
     
@@ -92,8 +92,8 @@ export default function Hackathons() {
               <AccordionItemButton className="flex justify-between items-center">
                 <h1
                   className={
-                    "text-[#4A4B5E] text-lg hover:text-[#F47C57] " +
-                    `${activeIndex === indx ? "font-bold" : "font-normal"
+                    'text-[#4A4B5E] text-lg hover:text-[#F47C57] ' +
+                    `${activeIndex === indx ? 'font-bold' : 'font-normal'
                     }`
                   }
                 >

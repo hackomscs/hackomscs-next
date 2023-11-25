@@ -32,7 +32,7 @@ const SPONSORS = {
   TI: {
     name: 'Texas Instruments',
     img: ti,
-    link: "https://www.ti.com/"
+    link: 'https://www.ti.com/'
   },
   STUDENT_GOV: {
     name: 'UTD Student Government',
@@ -42,22 +42,22 @@ const SPONSORS = {
   CBRE: {
     name: 'CBRE',
     img: cbre,
-    link: "https://www.cbre.com/"
+    link: 'https://www.cbre.com/'
   },
   RING_CENTRAL: {
-    name: "Ring Central",
+    name: 'Ring Central',
     img: rc,
-    link: "https://www.ringcentral.com/"
+    link: 'https://www.ringcentral.com/'
   },
   L3_HARRIS: {
-    name: "L3 Harris",
+    name: 'L3 Harris',
     img: l3,
-    link: "https://www.l3harris.com/"
+    link: 'https://www.l3harris.com/'
   },
   AXXESS: {
-    name: "Axxess",
+    name: 'Axxess',
     img: axxess,
-    link: "https://www.axxess.com/"
+    link: 'https://www.axxess.com/'
   },
   GOOGLE: {
     name: 'Google',
@@ -109,7 +109,7 @@ const SPONSORS = {
     link: 'https://www.toyota.com/'
   },
   STANDOUT_STICKERS: {
-    name: "Standout Stickers",
+    name: 'Standout Stickers',
     img: standout_stickers,
     link: 'http://hackp.ac/mlh-StandOutStickers-hackathons'
   }

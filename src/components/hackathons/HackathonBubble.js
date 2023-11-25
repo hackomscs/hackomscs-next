@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import Image from "next/image"
-import CONSTRAINTS from "constants/constraints"
-import Link from "next/link"
+import styled from 'styled-components'
+import Image from 'next/image'
+import CONSTRAINTS from 'constants/constraints'
+import Link from 'next/link'
 
 const Container = styled.div`
     // flexy

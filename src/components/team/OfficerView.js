@@ -1,5 +1,5 @@
-import Image from "next/image"
-import styled from "styled-components"
+import Image from 'next/image'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
     // flexy
@@ -42,7 +42,7 @@ export default function OfficerView({ data, index }) {
                 <NormalHolder>
                     <Image
                         src={require(`src/assets/img/headshots/${
-                            data.name.split(" ")[0]
+                            data.name.split(' ')[0]
                         }.png`)}
                         width={200}
                         height={200}

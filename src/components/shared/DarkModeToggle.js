@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-import ThemeContext from "../../context/ThemeContext";
+import ThemeContext from '../../context/ThemeContext';
 
 import galaxy from '../../assets/img/galaxy.jpeg';
 import sky from '../../assets/img/sky-4.jpg';
@@ -61,7 +61,7 @@ const BALL_SIZE = BASE_HEIGHT * 1.05;
 const Ball = styled.button`
   outline: none;
   border: none;
-  background-color: ${props => props.$on ? "white" : "#DDDDDD"};
+  background-color: ${props => props.$on ? 'white' : '#DDDDDD'};
   height: ${BALL_SIZE}px;
   width: ${BALL_SIZE}px;
   border-radius: 100%;
@@ -132,7 +132,7 @@ export default function DarkModeToggle() {
 
   function onClick() {
     setDark(!dark);
-    localStorage.setItem("dark", !dark);
+    localStorage.setItem('dark', !dark);
   }
 
   return (

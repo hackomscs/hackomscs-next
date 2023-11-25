@@ -1,6 +1,6 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-const { default: Link } = require("next/link");
+const { default: Link } = require('next/link');
 export default function Register() {
     return (
         <Head>

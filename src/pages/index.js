@@ -14,7 +14,7 @@ export default function Home() {
       
       {/* Primarily for Apple iMessage previews. OG only works with an absolute path. 
           TODO: use a solution that generates this dynamically instead of requiring a weirdly specific link. */}
-      <meta property="og:image" content={"/Logo Color Square.png"} />
+      <meta property="og:image" content={'/Logo Color Square.png'} />
     </Head>
     <Main />
     </>
