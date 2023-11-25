@@ -1,13 +1,10 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
-import mikul from 'assets/img/mikey.jpg';
+import LINKS from '../../constants/links';
 
-import LINKS from 'constants/links';
-
-import InlineGradient from 'components/shared/InlineGradient';
+import InlineGradient from '../../components/shared/InlineGradient';
 
 const Wrapper = styled.div`
   width: 100%;

@@ -1,8 +1,9 @@
-import Header from 'components/shared/Header';
-import styled from 'styled-components';
-import CONSTRAINTS from 'constants/constraints';
-
 import React, { useState } from "react";
+
+import Header from '../../components/shared/Header';
+import styled from 'styled-components';
+import CONSTRAINTS from '../../constants/constraints';
+
 import 'react-accessible-accordion/dist/fancy-example.css';
 
 

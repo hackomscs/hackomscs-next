@@ -1,7 +1,5 @@
-import Header from 'components/shared/Header';
+import Header from '../../components/shared/Header';
 import styled from 'styled-components';
-import SponsorGrid from 'components/sponsors/SponsorGrid';
-
 
 const SubHeader = styled.h3`
   color: var(--subheader);

@@ -1,6 +1,6 @@
-import Header from 'components/shared/Header';
-import DirectorQuote from 'components/team/DirectorQuote';
-import TeamCarousel from 'components/team/TeamCarousel';
+import Header from '../../components/shared/Header';
+import DirectorQuote from '../../components/team/DirectorQuote';
+import TeamCarousel from '../../components/team/TeamCarousel';
 
 export default function Team() {
   return (

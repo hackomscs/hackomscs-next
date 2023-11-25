@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../constants/constraints';
 
 // defining styles that should apply across the entire website
 export default createGlobalStyle`

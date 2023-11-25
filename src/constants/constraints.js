@@ -1,4 +1,4 @@
-export default {
+const constraints = {
   DEFAULT: '700px',
   DEFAULT_RAW: 700,
   FOOTER_CONTENT: '900px',
@@ -23,3 +23,5 @@ export default {
   DEFAULT_MARGIN: '10px',
   DEFAULT_MOBILE_WIDTH: '95%'
 }
+
+export default constraints;

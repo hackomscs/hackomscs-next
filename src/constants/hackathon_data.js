@@ -1,6 +1,6 @@
 // helpful: https://cssgradient.io/
 
-export default {
+const hackathon_data = {
     TEN: {
         name: "HackUTD VIII",
         websiteLink: "https://www.axxess.com/hackathon",
@@ -65,3 +65,5 @@ export default {
         date: "Spring 2015",
     },
 }
+
+export default hackathon_data;

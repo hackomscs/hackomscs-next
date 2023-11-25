@@ -1,4 +1,4 @@
-export default {
+const links = {
   INSTA: 'https://www.instagram.com/hackomscs/',
   TWITTER: 'https://twitter.com/hackomscs',
   LINKEDIN: 'https://www.linkedin.com/company/hackomscs/',
@@ -10,3 +10,5 @@ export default {
   SUPPORT_MAIL_LINK: 'mailto:support@hackomscs.com?subject=HackOMSCS Sponsorship Inquiry&body=',
   VOLUNTEER: 'https://docs.google.com/forms/d/e/1FAIpQLSezUIl1rG_fXAuQcdSKbzacWK9Yix-QFYJu4voAbOQa5S32Dg/viewform?usp=sf_link'
 }
+
+export default links;

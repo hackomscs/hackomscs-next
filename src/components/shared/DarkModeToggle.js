@@ -4,12 +4,12 @@ import styled from 'styled-components';
 
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-import ThemeContext from "context/ThemeContext";
+import ThemeContext from "../../context/ThemeContext";
 
-import galaxy from 'assets/img/galaxy.jpeg';
-import sky from 'assets/img/sky-4.jpg';
+import galaxy from '../../assets/img/galaxy.jpeg';
+import sky from '../../assets/img/sky-4.jpg';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
 const BASE_WIDTH = 140;
 const BASE_HEIGHT = BASE_WIDTH * 0.5;

@@ -41,7 +41,7 @@ export default function OfficerView({ data, index }) {
             <Holder>
                 <NormalHolder>
                     <Image
-                        src={require(`assets/img/headshots/${
+                        src={require(`src/assets/img/headshots/${
                             data.name.split(" ")[0]
                         }.png`)}
                         width={200}

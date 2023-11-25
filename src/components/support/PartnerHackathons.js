@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import LINKS from 'constants/links';
+import LINKS from '../../constants/links';
 
 const PartnerDescription = styled.p`
 

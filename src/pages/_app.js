@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Script from 'next/script';
-import GlobalStyle from 'components/GlobalStyle';
-import ThemeContext from "context/ThemeContext";
+import GlobalStyle from '../components/GlobalStyle';
+import ThemeContext from "../context/ThemeContext";
 
 function MyApp({ Component, pageProps }) {
   // https://stackoverflow.com/questions/41030361/how-to-update-react-context-from-inside-a-child-component

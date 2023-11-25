@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
 const Divider = styled.div`
   background-color: #E1E1E1;

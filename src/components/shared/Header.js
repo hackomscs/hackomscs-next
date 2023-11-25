@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
 const Container = styled.div`
   z-index: 1;

@@ -1,4 +1,4 @@
-export default [
+const officers = [
     { name: "Peter A", team: "San Diego, CA" },
     { name: "Anthony O", team: "Pasedena, CA" },
     { name: "Cherie L", team: "Atlanta, GA" },
@@ -10,4 +10,6 @@ export default [
     { name: "Sam T", team: "" },
     { name: "Animita S", team: "" },
     { name: "Sid L", team: "" },
-]
+];
+
+export default officers;

@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { FaChevronCircleRight } from 'react-icons/fa';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
 const Container = styled.div`
   max-width: ${CONSTRAINTS.DEFAULT};

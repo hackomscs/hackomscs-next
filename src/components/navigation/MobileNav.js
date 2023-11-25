@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-import CONSTRAINTS from "constants/constraints";
+import CONSTRAINTS from "../../constants/constraints";
 
 const NavButton = styled.div`
   display: none;

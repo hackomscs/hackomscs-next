@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { FaInstagram, FaTwitterSquare, FaLinkedin, FaGithubSquare, FaTiktok } from 'react-icons/fa';
 
-import CONSTRAINTS from 'constants/constraints';
-import LINKS from 'constants/links';
+import CONSTRAINTS from '../../constants/constraints';
+import LINKS from '../../constants/links';
 
 const Container = styled.footer`
   width: 100%;

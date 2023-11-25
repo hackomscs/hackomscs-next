@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
-// lmao why tf did I choose to implement this by hand i'm dying
 
-import OfficerView from 'components/team/OfficerView';
+import OfficerView from '../../components/team/OfficerView';
 
-import CONSTRAINTS from 'constants/constraints';
-import OFFICERS from 'constants/officers';
+import CONSTRAINTS from '../../constants/constraints';
+import OFFICERS from '../../constants/officers';
 
 const Wrapper = styled.div`
   width: 100%;

@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import { FaEnvelope } from 'react-icons/fa';
-
-import LINKS from 'constants/links';
 
 const Button = styled.a`
   border: none;

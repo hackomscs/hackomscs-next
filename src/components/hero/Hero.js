@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import { useState, useEffect, useContext } from 'react';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
-import NavBar from 'components/navigation/Navbar';
-import StartButton from 'components/hero/StartButton';
+import NavBar from '../../components/navigation/Navbar';
+import StartButton from './StartButton';
 
-import DarkModeToggle from 'components/shared/DarkModeToggle';
-import RegisterButton from 'components/support/RegisterButton';
+import DarkModeToggle from '../../components/shared/DarkModeToggle';
+import RegisterButton from '../../components/support/RegisterButton';
 
-import ThemeContext from 'context/ThemeContext';
+import ThemeContext from '../../context/ThemeContext';
 
 const Container = styled.div`
   // flexy

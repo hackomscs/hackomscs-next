@@ -2,11 +2,11 @@ import { useContext } from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 
-import SPONSORS from 'constants/sponsors';
-import CONSTRAINTS from 'constants/constraints';
-import ThemeContext from 'context/ThemeContext';
+import SPONSORS from '../../constants/sponsors';
+import CONSTRAINTS from '../../constants/constraints';
+import ThemeContext from '../../context/ThemeContext';
 
-import shadow from 'assets/img/half_shadow.png';
+import shadow from '../../assets/img/half_shadow.png';
 
 const Holder = styled.div`
   position: relative;

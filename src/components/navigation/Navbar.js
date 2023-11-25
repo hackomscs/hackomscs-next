@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
-import MobileNav from 'components/navigation/MobileNav';
+import MobileNav from '../../components/navigation/MobileNav';
 
 const NavContainer = styled.nav`
   margin-top: 20px;

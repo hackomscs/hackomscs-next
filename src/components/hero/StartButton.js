@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import styled, { keyframes } from 'styled-components';
 
-import CONSTRAINTS from 'constants/constraints';
+import CONSTRAINTS from '../../constants/constraints';
 
 const up_down = keyframes`
   0% {
