@@ -95,7 +95,7 @@ export default function Footer() {
     <Container>
       <SubContainer>
         <Row>
-        <Credits>© {new Date().getFullYear()} HackOMSCS</Credits>
+          <Credits>© {new Date().getFullYear()} HackOMSCS</Credits>
           <Socials>
             <a href={LINKS.INSTA}><FaInstagram /></a>
             <a href={LINKS.TWITTER}><FaTwitterSquare /></a>

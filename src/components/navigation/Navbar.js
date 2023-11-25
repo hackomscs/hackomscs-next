@@ -64,16 +64,16 @@ const NavItem = styled.li`
 function NavBar() {
   return(
     <>
-    <NavContainer>
-      <NavContents>
-        <NavItem><Link href="#about">About Us</Link></NavItem>
-        <NavItem><Link href="#faq">FAQ</Link></NavItem>
-        <NavItem><Link href="#team">Meet the Team</Link></NavItem>
-        <NavItem><Link href="#support">Support Us</Link></NavItem>
-        <NavItem><Link href="#sponsors">Sponsors</Link></NavItem>
-      </NavContents>
-    </NavContainer>
-    <MobileNav/>
+      <NavContainer>
+        <NavContents>
+          <NavItem><Link href="#about">About Us</Link></NavItem>
+          <NavItem><Link href="#faq">FAQ</Link></NavItem>
+          <NavItem><Link href="#team">Meet the Team</Link></NavItem>
+          <NavItem><Link href="#support">Support Us</Link></NavItem>
+          <NavItem><Link href="#sponsors">Sponsors</Link></NavItem>
+        </NavContents>
+      </NavContainer>
+      <MobileNav/>
     </>
   )
 }

@@ -159,17 +159,17 @@ function TeamCarousel() {
       </ButtonWrapper>
       <TeamGridWrapper>
         <TeamGridContents index={index}>
-        {teamArrays.map((arr, index) => {
-          return (
-            <TeamGrid key={index}>
-              {arr.map((item, index) => {
-                return (
-                  <OfficerView data={item} index={index} key={index} />
-                )
-              })}
-            </TeamGrid>
-          )
-        })}
+          {teamArrays.map((arr, index) => {
+            return (
+              <TeamGrid key={index}>
+                {arr.map((item, index) => {
+                  return (
+                    <OfficerView data={item} index={index} key={index} />
+                  )
+                })}
+              </TeamGrid>
+            )
+          })}
         </TeamGridContents>
       </TeamGridWrapper>
       <ButtonWrapper>

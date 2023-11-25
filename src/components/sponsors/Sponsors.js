@@ -17,9 +17,9 @@ const SubHeader = styled.h3`
 export default function Sponsors() {
   return (
     <>
-    <Header title="Sponsors" givenId="sponsors" />
-    <SubHeader>Coming Soon!</SubHeader>
-    {/* <SponsorGrid /> */}
+      <Header title="Sponsors" givenId="sponsors" />
+      <SubHeader>Coming Soon!</SubHeader>
+      {/* <SponsorGrid /> */}
     </>
   )
 }

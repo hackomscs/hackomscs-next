@@ -29,7 +29,7 @@ const Container = styled.div`
     transition: opacity 0.6s linear, visibility 0.6s linear;
     opacity: 0;
     ${(props) =>
-        props.selected &&
+    props.selected &&
         `
     // opacity: 1;
     // display: flex;
@@ -43,17 +43,17 @@ const Container = styled.div`
 `
 
 export function HackBubble({ img, selected, data }) {
-    return (
-        <Container selected={selected}>
-            <Link href={data.websiteLink}>
-                <Image
-                    src={require(`assets/img/hack_bubbles/Slide${img}.png`)}
-                    width={1035}
-                    height={561}
-                    alt="HackUTD's Director"
-                    objectFit="cover"
-                />
-            </Link>
-        </Container>
-    )
+  return (
+    <Container selected={selected}>
+      <Link href={data.websiteLink}>
+        <Image
+          src={require(`assets/img/hack_bubbles/Slide${img}.png`)}
+          width={1035}
+          height={561}
+          alt="HackUTD's Director"
+          objectFit="cover"
+        />
+      </Link>
+    </Container>
+  )
 }

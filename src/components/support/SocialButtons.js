@@ -52,16 +52,16 @@ const SocialText = styled.div`
 // https://github.com/react-icons/react-icons/issues/251
 const SocialButton = ({ Image, link, at, altText }) => (
   <SocialButtonContainer href={link}>
-        <Image style={{fill: 'url(#blue-gradient)'}} alt={altText} />
-        <SocialText><InlineGradient>{at}</InlineGradient></SocialText>
+    <Image style={{fill: 'url(#blue-gradient)'}} alt={altText} />
+    <SocialText><InlineGradient>{at}</InlineGradient></SocialText>
 
-        {/* This allows us to make gradient dynamic */}
-        <svg width="0" height="0">
-          <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
-            <stop stopColor="#FFB525" offset="0%" />
-            <stop stopColor="#FF56D6" offset="100%" />
-          </linearGradient>
-        </svg>
+    {/* This allows us to make gradient dynamic */}
+    <svg width="0" height="0">
+      <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+        <stop stopColor="#FFB525" offset="0%" />
+        <stop stopColor="#FF56D6" offset="100%" />
+      </linearGradient>
+    </svg>
         
   </SocialButtonContainer>
 )

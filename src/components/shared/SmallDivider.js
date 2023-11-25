@@ -19,9 +19,9 @@ const Divider = styled.div`
 `
 
 function TeamDivider({ style }) {
-   return (
-     <Divider style={style} />
-   )
+  return (
+    <Divider style={style} />
+  )
 }
 
 export default TeamDivider;

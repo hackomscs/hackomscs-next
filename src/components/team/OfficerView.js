@@ -36,24 +36,24 @@ const NormalHolder = styled.div`
     }
 `
 export default function OfficerView({ data, index }) {
-    return (
-        <Wrapper>
-            <Holder>
-                <NormalHolder>
-                    <Image
-                        src={require(`src/assets/img/headshots/${
-                            data.name.split(' ')[0]
-                        }.png`)}
-                        width={200}
-                        height={200}
-                        alt={`Image of ${data.name}, a HackUTD Officer.`}
-                        objectFit="cover"
-                    />
-                </NormalHolder>
-            </Holder>
+  return (
+    <Wrapper>
+      <Holder>
+        <NormalHolder>
+          <Image
+            src={require(`src/assets/img/headshots/${
+              data.name.split(' ')[0]
+            }.png`)}
+            width={200}
+            height={200}
+            alt={`Image of ${data.name}, a HackUTD Officer.`}
+            objectFit="cover"
+          />
+        </NormalHolder>
+      </Holder>
 
-            <Name>{data.name}</Name>
-            <Team>{data.team}</Team>
-        </Wrapper>
-    )
+      <Name>{data.name}</Name>
+      <Team>{data.team}</Team>
+    </Wrapper>
+  )
 }

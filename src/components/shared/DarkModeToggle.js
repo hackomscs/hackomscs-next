@@ -138,13 +138,13 @@ export default function DarkModeToggle() {
   return (
     <Container >
       
-    <Wrapper>
-      <Galaxy><Image alt='galaxy' src={galaxy} width={BASE_WIDTH} height={BASE_HEIGHT} /></Galaxy>
-      <Sunrise $on={!dark}><Image  alt='sunrise' src={sky} width={BASE_WIDTH} height={BASE_HEIGHT} /></Sunrise>
-      <FaMoon />
-      <FaSun />
-    </Wrapper>
-    <Ball $on={!dark} onClick={onClick} onDragEnd={onClick} onDragLeave={onClick}/>
+      <Wrapper>
+        <Galaxy><Image alt='galaxy' src={galaxy} width={BASE_WIDTH} height={BASE_HEIGHT} /></Galaxy>
+        <Sunrise $on={!dark}><Image  alt='sunrise' src={sky} width={BASE_WIDTH} height={BASE_HEIGHT} /></Sunrise>
+        <FaMoon />
+        <FaSun />
+      </Wrapper>
+      <Ball $on={!dark} onClick={onClick} onDragEnd={onClick} onDragLeave={onClick}/>
     </Container>
   )
 }

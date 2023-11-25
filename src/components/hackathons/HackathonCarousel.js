@@ -44,15 +44,15 @@ const Button = styled.div`
     top: 50%;
     z-index: 1;
     ${(props) =>
-        props.left
-            ? `
+    props.left
+      ? `
     left: -25px;
     transform: translateY(-50%) scaleX(-1);
     ${CONSTRAINTS.DEFAULT_BP} {
       left: 5px;
     }
   `
-            : `
+      : `
     right: -25px;
     transform: translateY(-50%);
     ${CONSTRAINTS.DEFAULT_BP} {
@@ -82,13 +82,13 @@ const ChooserButton = styled.div`
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 
     ${(props) =>
-        !props.selected &&
+    !props.selected &&
         `&:hover {
     background: var(--main-gradient);
     opacity: 0.5;
   }`}
     ${(props) =>
-        props.selected &&
+    props.selected &&
         `
       background: var(--main-gradient);
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
@@ -106,75 +106,75 @@ const HackathonDate = styled.div`
 `
 
 const HACKATHONS = [
-    HACKATHON_DATA.TEN,
-    HACKATHON_DATA.NINE,
-    HACKATHON_DATA.EIGHT,
-    HACKATHON_DATA.SEVEN,
-    HACKATHON_DATA.GAME_JAM,
-    HACKATHON_DATA.SIX,
-    HACKATHON_DATA.NINETEEN,
-    HACKATHON_DATA.HACK_FOR_HUMANITY,
-    HACKATHON_DATA.EIGHTEEN,
-    HACKATHON_DATA.SEVENTEEN,
-    HACKATHON_DATA.SIXTEEN,
-    HACKATHON_DATA.FIFTEEN,
+  HACKATHON_DATA.TEN,
+  HACKATHON_DATA.NINE,
+  HACKATHON_DATA.EIGHT,
+  HACKATHON_DATA.SEVEN,
+  HACKATHON_DATA.GAME_JAM,
+  HACKATHON_DATA.SIX,
+  HACKATHON_DATA.NINETEEN,
+  HACKATHON_DATA.HACK_FOR_HUMANITY,
+  HACKATHON_DATA.EIGHTEEN,
+  HACKATHON_DATA.SEVENTEEN,
+  HACKATHON_DATA.SIXTEEN,
+  HACKATHON_DATA.FIFTEEN,
 ]
 
 export default function HackathonCarousel() {
-    const [index, setIndex] = useState(0)
-    const [currentHackathon, setCurrentHackathon] = useState(HACKATHONS[0])
+  const [index, setIndex] = useState(0)
+  const [currentHackathon, setCurrentHackathon] = useState(HACKATHONS[0])
 
-    function onLeftButtonPress() {
-        if (index == 0) {
-            setIndex(HACKATHONS.length - 1)
-        } else {
-            setIndex(index - 1)
-        }
+  function onLeftButtonPress() {
+    if (index == 0) {
+      setIndex(HACKATHONS.length - 1)
+    } else {
+      setIndex(index - 1)
     }
-    function onRightButtonPress() {
-        if (index + 1 == HACKATHONS.length) {
-            setIndex(0)
-        } else {
-            setIndex(index + 1)
-        }
+  }
+  function onRightButtonPress() {
+    if (index + 1 == HACKATHONS.length) {
+      setIndex(0)
+    } else {
+      setIndex(index + 1)
     }
+  }
 
-    useEffect(() => {
-        setCurrentHackathon(HACKATHONS[index])
-    }, [index])
+  useEffect(() => {
+    setCurrentHackathon(HACKATHONS[index])
+  }, [index])
 
-    return (
-        <>
-            <TopWrapper>
-                <Button onClick={onLeftButtonPress} left>
-                    <FaChevronRight />
-                </Button>
-                {HACKATHONS.map((hackathon, mapIndex) => {
-                    return (
-                        <HackBubble
-                            selected={index == mapIndex}
-                            img={12 - mapIndex}
-                            key={mapIndex}
-                            data={hackathon}
-                        />
-                    )
-                })}
-                <Button onClick={onRightButtonPress}>
-                    <FaChevronRight />
-                </Button>
-            </TopWrapper>
-            <HackathonDate>{currentHackathon.date}</HackathonDate>
-            <ChooserContainer>
-                {HACKATHONS.map((hackathon, mapIndex) => {
-                    return (
-                        <ChooserButton
-                            onClick={() => setIndex(mapIndex)}
-                            selected={index == mapIndex}
-                            key={mapIndex}
-                        />
-                    )
-                })}
-            </ChooserContainer>
-        </>
-    )
+  return (
+    <>
+      <TopWrapper>
+        <Button onClick={onLeftButtonPress} left>
+          <FaChevronRight />
+        </Button>
+        {HACKATHONS.map((hackathon, mapIndex) => {
+          return (
+            <HackBubble
+              selected={index == mapIndex}
+              img={12 - mapIndex}
+              key={mapIndex}
+              data={hackathon}
+            />
+          )
+        })}
+        <Button onClick={onRightButtonPress}>
+          <FaChevronRight />
+        </Button>
+      </TopWrapper>
+      <HackathonDate>{currentHackathon.date}</HackathonDate>
+      <ChooserContainer>
+        {HACKATHONS.map((hackathon, mapIndex) => {
+          return (
+            <ChooserButton
+              onClick={() => setIndex(mapIndex)}
+              selected={index == mapIndex}
+              key={mapIndex}
+            />
+          )
+        })}
+      </ChooserContainer>
+    </>
+  )
 }

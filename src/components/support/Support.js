@@ -44,22 +44,22 @@ const Description = styled.p`
 export default function Support() {
   return (
     <>
-    <Spacer />
-    <Header title="Support Us" rightJustify={true} givenId="support" />
-    <Container>
-      <SubHeader>Social Media</SubHeader>
-      <SocialButtons />
-      <SubHeader>Sponsor</SubHeader>
-      <Description>
+      <Spacer />
+      <Header title="Support Us" rightJustify={true} givenId="support" />
+      <Container>
+        <SubHeader>Social Media</SubHeader>
+        <SocialButtons />
+        <SubHeader>Sponsor</SubHeader>
+        <Description>
         Interested in sponsoring HackOMSCS for our next hackathon and beyond?
         Get in touch with our <InlineGradient>Sponsorship Team</InlineGradient> and learn how supporting HackOMSCS 
         will benefit you!
-      </Description>
-      <GetInTouchButton />
-      {/* <SmallDivider />
+        </Description>
+        <GetInTouchButton />
+        {/* <SmallDivider />
       <SubHeader partner>Partner Hackathons</SubHeader>
       <PartnerHackathons /> */}
-    </Container>
+      </Container>
     </>
   )
 }

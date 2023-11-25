@@ -80,33 +80,33 @@ export default function Hackathons() {
     <>
       <Header title="Frequently Asked Questions" givenId="faq" />
       <Container>
-      <Accordion allowMultipleExpanded allowZeroExpanded className="w-full">
-        {content.map((contenido, indx) => (
-          <AccordionItem
-            key={indx}
-            id={contenido.uuid}
-            uuid={contenido.uuid}
-            className="border-b-[1px] py-[15.7px]"
-          >
-            <AccordionHeading className="" onClick={() => handleClick(indx)}>
-              <AccordionItemButton className="flex justify-between items-center">
-                <h1
-                  className={
-                    'text-[#4A4B5E] text-lg hover:text-[#F47C57] ' +
+        <Accordion allowMultipleExpanded allowZeroExpanded className="w-full">
+          {content.map((contenido, indx) => (
+            <AccordionItem
+              key={indx}
+              id={contenido.uuid}
+              uuid={contenido.uuid}
+              className="border-b-[1px] py-[15.7px]"
+            >
+              <AccordionHeading className="" onClick={() => handleClick(indx)}>
+                <AccordionItemButton className="flex justify-between items-center">
+                  <h1
+                    className={
+                      'text-[#4A4B5E] text-lg hover:text-[#F47C57] ' +
                     `${activeIndex === indx ? 'font-bold' : 'font-normal'
                     }`
-                  }
-                >
-                  {contenido.button}
-                </h1>
-              </AccordionItemButton>
-            </AccordionHeading>
-            <AccordionItemPanel className="pt-[5px] ">
-              <p className="text-[#787887]">{contenido.panel}</p>
-            </AccordionItemPanel>
-          </AccordionItem>
-        ))}
-      </Accordion>
+                    }
+                  >
+                    {contenido.button}
+                  </h1>
+                </AccordionItemButton>
+              </AccordionHeading>
+              <AccordionItemPanel className="pt-[5px] ">
+                <p className="text-[#787887]">{contenido.panel}</p>
+              </AccordionItemPanel>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </Container>
 
     </>

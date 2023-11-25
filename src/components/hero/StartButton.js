@@ -49,15 +49,15 @@ const Button = styled.div`
 function StartButton() {
   return (
     <Link href="#about">
-    <Button>
-      <Image
-        alt="triangular button to move to the next section"
-        className="start-button-img"
-        src="svg/tri_button.svg"
-        height="32"
-        width="64"
-      />
-    </Button>
+      <Button>
+        <Image
+          alt="triangular button to move to the next section"
+          className="start-button-img"
+          src="svg/tri_button.svg"
+          height="32"
+          width="64"
+        />
+      </Button>
     </Link>
   )
 }
