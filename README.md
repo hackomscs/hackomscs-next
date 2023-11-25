@@ -1,6 +1,24 @@
-# HackOMSCS Organizer Site
+# HackOMSCS-Next
 
-## Code
+## Getting Started
+
+Use nvm or nvm-windows to manage runtime. node + yarn versions used are:
+ 
+    node: v20.10.0
+    yarn: 1.22.21
+
+Steps to set up environment:
+
+    1) Install nvm, see https://github.com/nvm-sh/nvm
+    
+    2) nvm install v20.10.0
+    
+    3) npm install --global yarn@1.22.21
+
+run dev server:
+
+    yarn run build
+    yarn run dev
 
 ## Contributions
 
