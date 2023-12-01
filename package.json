@@ -1,40 +1,30 @@
 {
-  "name": "hackutd_org_site_nextjs",
+  "name": "hackomscs-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook -s public",
-    "cypress": "cypress open"
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.6",
-    "react": "18.1.0",
+    "@next/eslint-plugin-next": "^14.0.3",
+    "eslint-plugin-react": "^7.33.2",
+    "next": "14.0.3",
+    "react": "18.2.0",
     "react-accessible-accordion": "^5.0.0",
-    "react-dom": "18.1.0",
-    "react-icons": "^4.4.0",
-    "react-lottie": "^1.2.3",
-    "sharp": "^0.30.7",
-    "styled-components": "^5.3.5"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.12.0",
+    "sharp": "^0.32.6",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.5",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-webpack5": "^6.5.9",
-    "@storybook/manager-webpack5": "^6.5.9",
-    "@storybook/react": "^6.5.9",
-    "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.2.5",
-    "babel-plugin-styled-components": "^2.0.7",
-    "cypress": "^10.3.1",
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6"
+    "@types/node": "^20",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "14.0.3",
+    "typescript": "^5"
   }
 }
