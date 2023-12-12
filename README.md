@@ -20,9 +20,13 @@ run dev server:
     yarn run build
     yarn run dev
 
+or on windows:
+    npm install
+    npm run dev
+
 ## Contributions
 
-1. **Make or pick an issue to work on.** If you'd like to contribute on a problem or feature you've thought of yourself, first [make an issue](https://github.com/vishrut-goel/omscs-hackathon), and wait until it receives approval from a site adminstrator. Otherwise, you're free to pick up an existing issue.
+1. **Make or pick an issue to work on.** If you'd like to contribute on a problem or feature you've thought of yourself, first [make an issue](https://github.com/hackomscs/hackomscs-next), and wait until it receives approval from a site adminstrator. Otherwise, you're free to pick up an existing issue.
 
 2. **Make a branch.** Create a git branch with a descriptive name to work on your specific code.
 

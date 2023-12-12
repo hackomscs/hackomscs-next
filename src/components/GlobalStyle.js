@@ -10,23 +10,8 @@ export default createGlobalStyle`
     --hackportal-text-gradient: radial-gradient(circle, rgba(187,131,255,1) 0%, rgba(123,129,255,1) 94%);
     --hackportal-color: #7B81FF;
 
-    ${props => props.dark ? `
-      --main-gradient: linear-gradient(191deg, rgba(89,15,183,1) 0%, rgba(180,0,201,1) 38%, rgba(212,112,15,1) 100%);
-      --primary: white;
-      --opposite: black;
-      --raised-button: #222222;
-      --open-source-subtext: white;
-      --footer-gradient: linear-gradient(20deg, rgba(89,15,183,1) 0%, rgba(180,0,201,1) 38%, rgba(212,112,15,1) 100%);
-      --webkit-scrollbar-gradient: linear-gradient(0deg, rgba(180,0,201,1) 38%, rgba(212,112,15,1) 100%);
-      // --get-in-touch-gradient: linear-gradient(80deg, rgba(89,15,183,1) 0%, rgba(180,0,201,1) 38%, rgba(212,112,15,1) 80%);
-      --subheader: #AAAAAA;
-      --divider: #444444;
-      --header: linear-gradient(10deg, rgba(255, 0, 214, 0.8) 20%, rgba(280,112,15, 0.95) 70%);
-      --hackathon-date: #999999;
-      --hackathon-chooser-bg: #444444;
-      --sheet-bg: #333333;
-    `:  `
-      --main-gradient: linear-gradient(180deg, rgba(27, 171, 238, .8), rgba(0, 0, 0, .2) 50%, #FBB321 100%);
+    ${props => `
+      --main-gradient: linear-gradient(154deg, #243166, #105c52);
       --primary: black;
       --opposite: white;
       --raised-button: white;
@@ -52,7 +37,7 @@ export default createGlobalStyle`
   body {
     margin: 0;
     overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
     background-color: var(--opposite);
     color: var(--primary);

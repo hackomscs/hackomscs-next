@@ -28,7 +28,7 @@ const NavItem = styled.li`
   a {
     font-size: 18px;
     text-decoration: none;
-    color: white;
+    color: #e4e4f6;
     font-weight: bold;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 
@@ -52,11 +52,13 @@ const NavItem = styled.li`
     border-radius: 3px;
 
     transition: transform 0.3s ease;
+    transform-origin: bottom right;
     transform: scaleX(0);
   }
 
   a:hover::before {
     transform: scaleX(1);
+    transform-origin: bottom left;
   }
 `
 

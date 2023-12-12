@@ -1,10 +1,13 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 import { useState, useEffect, useContext } from 'react';
 
 import CONSTRAINTS from '../../constants/constraints';
 
 import NavBar from '../../components/navigation/Navbar';
 import StartButton from './StartButton';
+
+//import Sparkles from '../../components/Sparkles';
 
 import DarkModeToggle from '../../components/shared/DarkModeToggle';
 import RegisterButton from '../../components/support/RegisterButton';
@@ -15,12 +18,12 @@ const Container = styled.div`
   // flexy
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 
   width: 100%;
-  max-width: ${CONSTRAINTS.DEFAULT_RAW + 200}px;
+  max-width: ${CONSTRAINTS.DEFAULT_RAW + 900}px;
   height: 100vh;
-  color: white;
+  color: #e4e4f6;
   box-sizing: border-box;
   position: relative;
 
@@ -30,10 +33,68 @@ const Container = styled.div`
   }
 `
 
+const SubContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  width: 100%;
+
+  ${CONSTRAINTS.DEFAULT_BP} {
+    padding: 10px 5px;
+    padding-top: 20px;
+  }
+`
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &:nth-child(2) {
+    margin-top: 15px;
+  }
+
+  ${CONSTRAINTS.DEFAULT_BP} {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+`
+
 /** Gradient background */
 const Background = styled.div`
-  background: var(--main-gradient);
   z-index: -1;
+
+    background: linear-gradient(154deg, #243166, #105c52);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    -o-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+
 
   width: 100vw;
   height: 100%;
@@ -43,8 +104,10 @@ const Background = styled.div`
 
 /** Container for the logo + text in hero */
 const WelcomeContent = styled.div`
-  margin-top: 30px;
-  text-align: center;
+  display: flex;
+  padding-bottom: 200px;
+  flex-direction: column;
+  text-align: left;
   z-index: 2; // for stars
 
   div {
@@ -87,11 +150,11 @@ const SupplementalText = styled.p`
   `}
 `
 
-const ExperimentalFlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`
+// const ExperimentalFlexContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// `
 
 const SkylineContainer = styled.div`
   position: absolute;
@@ -110,6 +173,34 @@ const Skyline = styled.img`
     width: 100vw;
   }
 `
+
+const TowerDiv = styled.div`
+padding-top:100px;
+padding-right:150px;
+
+${CONSTRAINTS.DEFAULT_BP} {
+  min-width: 200px;
+  min-width: none;
+  width: 100vw;
+}
+`
+
+
+
+function Tower() {
+  return (
+    <TowerDiv>
+      <Image
+        alt="landing-illustration"
+        className="start-button-img"
+        src="svg/tower.svg"
+        height= "600"
+        width = "755"
+      />
+    </TowerDiv>
+  );
+}
+
 
 /** 
  * Honestly this was kind of just experimentally coded, eventually settled on this as it seemed to solve 
@@ -137,16 +228,18 @@ export default function Hero() {
   return (
     <Container>
       <NavBar />
-      <DarkModeToggle />
-      <ExperimentalFlexContainer>
-        <WelcomeContent>
-          <SupplementalText>We are</SupplementalText>
-          <Title>HackOMSCS</Title>
-          <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
-        </WelcomeContent>
-        <RegisterButton />
-      </ExperimentalFlexContainer>
+        <SubContainer>
+        <Row>
+          <WelcomeContent>
+             <Title>HackOMSCS</Title>
+            <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
+          </WelcomeContent>
+          <Tower />
+        </Row>
+        {/* <RegisterButton /> */}
+        </SubContainer>
       <StartButton />
+      {/* {showSparkles && <Sparkles />} */}
       <Background />
     </Container>
   )
