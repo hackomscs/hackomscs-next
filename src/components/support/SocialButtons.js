@@ -58,8 +58,8 @@ const SocialButton = ({ Image, link, at, altText }) => (
     {/* This allows us to make gradient dynamic */}
     <svg width="0" height="0">
       <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
-        <stop stopColor="#FFB525" offset="0%" />
-        <stop stopColor="#FF56D6" offset="100%" />
+        <stop stopColor="#2bc3d2" offset="0%" />
+        <stop stopColor="#55d555" offset="100%" />
       </linearGradient>
     </svg>
         

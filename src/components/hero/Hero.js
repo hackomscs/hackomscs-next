@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Image from 'next/image';
 import { useState, useEffect, useContext } from 'react';
 
@@ -13,6 +13,7 @@ import DarkModeToggle from '../../components/shared/DarkModeToggle';
 import RegisterButton from '../../components/support/RegisterButton';
 
 import ThemeContext from '../../context/ThemeContext';
+
 
 const Container = styled.div`
   // flexy
@@ -149,6 +150,12 @@ const SupplementalText = styled.p`
     }
   `}
 `
+const Logo = styled.div`
+    position: absolute;
+    top: 0%;
+    right: 0%;
+`
+
 
 // const ExperimentalFlexContainer = styled.div`
 //   display: flex;
@@ -174,9 +181,32 @@ const Skyline = styled.img`
   }
 `
 
+const up_down = keyframes`
+  0% {
+    transform: translateY(0px);
+  } 50% {
+    transform: translateY(-10px);
+  } 100% {
+    transform: translateY(0px);
+  }
+`
+
 const TowerDiv = styled.div`
 padding-top:100px;
 padding-right:150px;
+display: flex;
+flex-direction: column;
+align-items: center;
+height:100%;
+z-index: 2;
+
+.tower-img {
+  animation: ${up_down} 3s ease-in-out infinite;
+  transition: filter 0.5s;
+  filter: drop-shadow(0px 3px 6px rgb(0 0 0 / 0.4));
+}
+
+}
 
 ${CONSTRAINTS.DEFAULT_BP} {
   min-width: 200px;
@@ -185,21 +215,37 @@ ${CONSTRAINTS.DEFAULT_BP} {
 }
 `
 
+const Tower = styled.img`
+  height: 100%;
+  width:100%;
+  object-fit: contain;
+`
 
+const CustomShape = styled.div`
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
 
-function Tower() {
-  return (
-    <TowerDiv>
-      <Image
-        alt="landing-illustration"
-        className="start-button-img"
-        src="svg/tower.svg"
-        height= "600"
-        width = "755"
-      />
-    </TowerDiv>
-  );
+  .wave-img {
+    filter: drop-shadow(4 4 16 black);
+  }
+`
+
+const waveStyle = {
+  position: 'relative',
+  display: 'block',
+  width: '100%',
+  zIndex: '1',
+  overflowClipMargin: 'unset',
+  overflow: 'visible'
 }
+
+
+
 
 
 /** 
@@ -226,21 +272,31 @@ export default function Hero() {
   }, [])
 
   return (
+    <>
     <Container>
       <NavBar />
-        <SubContainer>
+      <Logo>HackOMSCS Logo Here</Logo>
+      <SubContainer>
         <Row>
           <WelcomeContent>
-             <Title>HackOMSCS</Title>
+            <SupplementalText>HackOMSCS Logo Here</SupplementalText>
+            <Title>HackOMSCS</Title>
             <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
           </WelcomeContent>
-          <Tower />
+          <TowerDiv>
+            <Tower className="tower-img" src="svg/tower.svg" />
+          </TowerDiv>
         </Row>
-        {/* <RegisterButton /> */}
-        </SubContainer>
+      {/* <RegisterButton /> */}
+      </SubContainer>
       <StartButton />
       {/* {showSparkles && <Sparkles />} */}
       <Background />
+      
     </Container>
+    <CustomShape className="bottom-wave">
+      <Image className= "wave-img" src={require("/src/assets/img/waves.png")} style = {waveStyle} loading='eager' />
+    </CustomShape>
+    </>
   )
 }

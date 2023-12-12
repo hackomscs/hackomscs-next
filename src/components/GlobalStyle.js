@@ -5,22 +5,22 @@ import CONSTRAINTS from '../constants/constraints';
 // defining styles that should apply across the entire website
 export default createGlobalStyle`
   &:root {
-    --inline-gradient: linear-gradient(268.4deg, #FFB525 -4.94%, #FF56D6 102.31%);
-    --get-in-touch-gradient: linear-gradient(238.86deg, #FFB524 5.36%, rgba(255, 0, 214, 0.8) 119.14%);
+    --inline-gradient: linear-gradient(268.4deg, #55d555 -4.94%, #104e92 102.31%);
+    --get-in-touch-gradient: linear-gradient(238.86deg, #55d555 5.36%, #104e92 119.14%);
     --hackportal-text-gradient: radial-gradient(circle, rgba(187,131,255,1) 0%, rgba(123,129,255,1) 94%);
     --hackportal-color: #7B81FF;
 
     ${props => `
-      --main-gradient: linear-gradient(154deg, #243166, #105c52);
+      --main-gradient: linear-gradient(154deg, #55d555, #104e92 60%); //prob could use some changing, too light
       --primary: black;
       --opposite: white;
       --raised-button: white;
       --open-source-subtext: #636363;
-      --footer-gradient: linear-gradient(243.93deg, #FFB524 20.24%, rgba(255, 0, 214, 0.6) 125.26%);
-      --webkit-scrollbar-gradient: linear-gradient(0deg, #FFB524 3.05%, rgba(255, 0, 214, 0.45) 100%);
+      --footer-gradient: linear-gradient(243.93deg, #55d555 20.24%, #104e92 125.26%);
+      --webkit-scrollbar-gradient: linear-gradient(0deg, #55d555 3.05%, #104e92 100%);
       --subheader: #636363;
       --divider: #CECECE;
-      --header: linear-gradient(268.4deg, #FFB525 -4.94%, #FF56D6 102.31%);
+      --header: linear-gradient(268.4deg, #55d555 -4.94%, #104e92 102.31%);
       --hackathon-date: #515151;
       --hackathon-chooser-bg: #D9D9D9;
       --sheet-bg: #FFFFFF;

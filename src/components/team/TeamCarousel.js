@@ -29,7 +29,7 @@ const Wrapper = styled.div`
     position: absolute;
     height: 115%;
     background: var(--main-gradient);
-    opacity: 0.5;
+    opacity: 0.8;
 
     box-shadow: inset 0 0 15px #00000085;
   }
