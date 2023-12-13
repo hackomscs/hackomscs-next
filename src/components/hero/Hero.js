@@ -13,6 +13,7 @@ import DarkModeToggle from '../../components/shared/DarkModeToggle';
 import RegisterButton from '../../components/support/RegisterButton';
 
 import ThemeContext from '../../context/ThemeContext';
+import Sparkles from '../Sparkles';
 
 
 const Container = styled.div`
@@ -275,30 +276,28 @@ export default function Hero() {
 
   return (
     <>
-    <Container>
-      <NavBar />
-      <SubContainer>
-        <Row>
-          <WelcomeContent>
-            <SupplementalText>We are</SupplementalText>
-            <Title>HackOMSCS</Title>
-            <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
-            <RegisterButton />
-          </WelcomeContent>
-          <TowerDiv>
-            <Tower className="tower-img" src="svg/tower.svg" />
-          </TowerDiv>
-        </Row>
-      
-      </SubContainer>
-      <StartButton />
-      {/* {showSparkles && <Sparkles />} */}
-      <Background />
-      
-    </Container>
-    <CustomShape className="bottom-wave">
-      <Image className= "wave-img" src={require("/src/assets/img/waves.png")} style = {waveStyle} loading='eager' />
-    </CustomShape>
+      <Container>
+        <NavBar />
+        <SubContainer>
+          <Row>
+            <WelcomeContent>
+              <SupplementalText>We are</SupplementalText>
+              <Title>HackOMSCS</Title>
+              <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
+              <RegisterButton />
+            </WelcomeContent>
+            <TowerDiv>
+              <Tower className="tower-img" src="svg/tower.svg" />
+            </TowerDiv>
+          </Row>
+        </SubContainer>
+        <StartButton />
+        {showSparkles && <Sparkles />}
+        <Background />
+      </Container>
+      <CustomShape className="bottom-wave">
+        <Image className= "wave-img" alt='wave' src={require('/src/assets/img/waves.png')} style = {waveStyle} loading='eager' />
+      </CustomShape>
     </>
   )
 }

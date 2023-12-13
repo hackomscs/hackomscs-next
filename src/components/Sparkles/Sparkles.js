@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import Sparkle from './Sparkle';
 // const Sparkle = dynamic(() => import('./Sparkle', { ssr: false }))
 
-import useRandomInterval from 'hooks/useRandomInterval';
-import random, { randomFromArray } from 'functions/random';
-import range from 'functions/range';
+import useRandomInterval from '../../hooks/useRandomInterval';
+import random, { randomFromArray } from '../../functions/random';
+import range from '../../functions/range';
 
 // reference: https://www.joshwcomeau.com/react/animated-sparkles-in-react/
 // this is pretty much just a modified version of the above

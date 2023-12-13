@@ -71,7 +71,7 @@ function NavBar() {
         <NavContents>
           <NavItem>
             <Link href="#">
-              <Image className="logo-img" height="60" width="60" src={require("/src/assets/img/HackOMSCSLogoWhite.png")} />
+              <Image alt="logo" className="logo-img" height="60" width="60" src={require('/src/assets/img/HackOMSCSLogoWhite.png')} />
             </Link>
           </NavItem>
           <NavItem><Link href="#about">About Us</Link></NavItem>
