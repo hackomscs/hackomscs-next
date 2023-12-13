@@ -52,7 +52,6 @@ const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 
   &:nth-child(2) {
     margin-top: 15px;
@@ -105,9 +104,7 @@ const Background = styled.div`
 
 /** Container for the logo + text in hero */
 const WelcomeContent = styled.div`
-  display: flex;
-  padding-bottom: 200px;
-  flex-direction: column;
+  padding-bottom: 400px;
   text-align: left;
   z-index: 2; // for stars
 
@@ -121,7 +118,7 @@ const WelcomeContent = styled.div`
   }
 `
 
-/** 'HackUTD' title */
+/** 'HackOMSCS' title */
 const Title = styled.h1`
   font-size: 10vh;
   font-size: max(10vh, 100px);
@@ -150,10 +147,15 @@ const SupplementalText = styled.p`
     }
   `}
 `
-const Logo = styled.div`
+const Logo = styled.div` //might want to include for mobile
     position: absolute;
     top: 0%;
     right: 0%;
+
+    .logo-img {
+      height:60px;
+      width:60px;
+    }
 `
 
 
@@ -192,7 +194,7 @@ const up_down = keyframes`
 `
 
 const TowerDiv = styled.div`
-padding-top:100px;
+padding-bottom:5px;
 padding-right:150px;
 display: flex;
 flex-direction: column;
@@ -275,19 +277,19 @@ export default function Hero() {
     <>
     <Container>
       <NavBar />
-      <Logo>HackOMSCS Logo Here</Logo>
       <SubContainer>
         <Row>
           <WelcomeContent>
-            <SupplementalText>HackOMSCS Logo Here</SupplementalText>
+            <SupplementalText>We are</SupplementalText>
             <Title>HackOMSCS</Title>
             <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
+            <RegisterButton />
           </WelcomeContent>
           <TowerDiv>
             <Tower className="tower-img" src="svg/tower.svg" />
           </TowerDiv>
         </Row>
-      {/* <RegisterButton /> */}
+      
       </SubContainer>
       <StartButton />
       {/* {showSparkles && <Sparkles />} */}

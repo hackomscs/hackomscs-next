@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-
+import Image from 'next/image';
 import CONSTRAINTS from '../../constants/constraints';
 
 import MobileNav from '../../components/navigation/MobileNav';
@@ -20,6 +20,7 @@ const NavContents = styled.ul`
   list-style-type: none;
   padding: 0;
   display: flex;
+  align-items: center;
 `
 const NavItem = styled.li`
   margin-left: 10px;
@@ -68,6 +69,11 @@ function NavBar() {
     <>
       <NavContainer>
         <NavContents>
+          <NavItem>
+            <Link href="#">
+              <Image className="logo-img" height="60" width="60" src={require("/src/assets/img/HackOMSCSLogoWhite.png")} />
+            </Link>
+          </NavItem>
           <NavItem><Link href="#about">About Us</Link></NavItem>
           <NavItem><Link href="#faq">FAQ</Link></NavItem>
           <NavItem><Link href="#team">Meet the Team</Link></NavItem>
