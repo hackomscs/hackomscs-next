@@ -261,13 +261,25 @@ const waveStyle = {
   overflow: 'visible'
 }
 
+const animateOnAppear = keyframes`
+  0% {
+    opacity: 0;
+  } 50% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
+`
+
 const ButtonContainer = styled.div`
   object-fit: contain;
   height: 76px;
+  margin-left: 5px;
+  animation: ${animateOnAppear} 2s;
+  
   ${CONSTRAINTS.DEFAULT_BP} {
-    div {
-      
-    }
+    margin-left: 0px;
+  }
 `
 
 
