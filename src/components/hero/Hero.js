@@ -14,6 +14,7 @@ import RegisterButton from '../../components/support/RegisterButton';
 
 import ThemeContext from '../../context/ThemeContext';
 import Sparkles from '../Sparkles';
+import MobileNav from '../navigation/MobileNav';
 
 
 const Container = styled.div`
@@ -105,29 +106,35 @@ const Background = styled.div`
 
 /** Container for the logo + text in hero */
 const WelcomeContent = styled.div`
-  padding-bottom: 400px;
+  padding-top:50px;
   text-align: left;
   z-index: 2; // for stars
 
   div {
     min-height: 36px !important;
   }
+
+  .mobileImg {
+    display: none;
+  }
+
   ${CONSTRAINTS.DEFAULT_BP} {
-    div {
-      height: 150px !important;
+    text-align: center;
+    padding-top: 0px;
+    .mobileImg {
+      display: unset;
     }
   }
 `
 
 /** 'HackOMSCS' title */
 const Title = styled.h1`
-  font-size: 10vh;
-  font-size: max(10vh, 100px);
+  font-size: min(10vh, 100px);
   margin: 5px;
   text-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
 
   ${CONSTRAINTS.DEFAULT_BP} {
-    font-size: 15vw;
+    font-size: 13vw;
   }
 `
 
@@ -222,6 +229,10 @@ const Tower = styled.img`
   height: 100%;
   width:100%;
   object-fit: contain;
+  margin-bottom: 100px;
+  ${CONSTRAINTS.DEFAULT_BP} {
+    display: none;
+  }
 `
 
 const CustomShape = styled.div`
@@ -236,6 +247,9 @@ const CustomShape = styled.div`
   .wave-img {
     filter: drop-shadow(4 4 16 black);
   }
+  ${CONSTRAINTS.DEFAULT_BP} {
+    display: none;
+  }
 `
 
 const waveStyle = {
@@ -247,7 +261,14 @@ const waveStyle = {
   overflow: 'visible'
 }
 
-
+const ButtonContainer = styled.div`
+  object-fit: contain;
+  height: 76px;
+  ${CONSTRAINTS.DEFAULT_BP} {
+    div {
+      
+    }
+`
 
 
 
@@ -265,6 +286,9 @@ const ShadowHider = styled.div`
   bottom: 0;
 `
 
+
+
+
 export default function Hero() {
   // dealing with a ssr problem
   const [showSparkles, setShowSparkles] = useState(false);
@@ -281,10 +305,14 @@ export default function Hero() {
         <SubContainer>
           <Row>
             <WelcomeContent>
+              <Image className = "mobileImg" alt="logo" width={150} height={150} src={require('/src/assets/img/HackOMSCSLogoWhite.png')} />
               <SupplementalText>We are</SupplementalText>
-              <Title>HackOMSCS</Title>
+              <Title>hackOMSCS</Title>
               <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
-              <RegisterButton />
+              <ButtonContainer>
+                <RegisterButton />
+              </ButtonContainer>
+              
             </WelcomeContent>
             <TowerDiv>
               <Tower className="tower-img" src="svg/tower.svg" />
@@ -292,7 +320,6 @@ export default function Hero() {
           </Row>
         </SubContainer>
         <StartButton />
-        {showSparkles && <Sparkles />}
         <Background />
       </Container>
       <CustomShape className="bottom-wave">

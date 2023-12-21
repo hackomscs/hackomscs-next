@@ -6,7 +6,7 @@ import CONSTRAINTS from '../../constants/constraints';
 import MobileNav from '../../components/navigation/MobileNav';
 
 const NavContainer = styled.nav`
-  margin-top: 20px;
+  margin-top: 10px;
   z-index: 1; // for stars
   ${CONSTRAINTS.DEFAULT_BP} {
     display: none;
@@ -71,7 +71,7 @@ function NavBar() {
         <NavContents>
           <NavItem>
             <Link href="#">
-              <Image alt="logo" className="logo-img" height="60" width="60" src={require('/src/assets/img/HackOMSCSLogoWhite.png')} />
+              <Image alt="logo" className="logo-img" height="50" width="50" src={require('/src/assets/img/HackOMSCSLogoWhite.png')} />
             </Link>
           </NavItem>
           <NavItem><Link href="#about">About Us</Link></NavItem>

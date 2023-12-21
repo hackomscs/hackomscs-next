@@ -59,7 +59,7 @@ const Credits = styled.p`
 
 const Socials = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 13px;
   align-items: center;
   a {
@@ -101,7 +101,6 @@ export default function Footer() {
             <a href={LINKS.TWITTER}><FaTwitterSquare /></a>
             <a href={LINKS.LINKEDIN}><FaLinkedin /></a>
             <a href={LINKS.GITHUB_WEBSITE}><FaGithubSquare /></a>
-            <a href={LINKS.抖音}><FaTiktok style={{ height: '34px' }} /></a>
           </Socials>
         </Row>
         <Row>

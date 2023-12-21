@@ -44,8 +44,8 @@ export default function OfficerView({ data, index }) {
             src={require(`src/assets/img/headshots/${
               data.name.split(' ')[0]
             }.png`)}
-            width={200}
-            height={200}
+            width={116}
+            height={116}
             alt={`Image of ${data.name}, a HackUTD Officer.`}
             objectFit="cover"
           />

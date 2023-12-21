@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaInstagram, FaTwitter, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import InlineGradient from '../../components/shared/InlineGradient';
 
@@ -72,7 +72,7 @@ function SocialButtons() {
       <SocialButton Image={FaInstagram} at="@hackomscs" link={LINKS.INSTA} altText="Instagram Logo"/>
       <SocialButton Image={FaTwitter} at="@hackomscs" link={LINKS.TWITTER} altText="Twitter Logo"/>
       <SocialButton Image={FaLinkedin} at="@hackomscs" link={LINKS.LINKEDIN} altText="LinkedIn Logo"/>
-      <SocialButton Image={FaTiktok} at="@hackomscs" link={LINKS.抖音} altText="Tiktok Logo"/>
+      <SocialButton Image={FaGithub} at="@hackomscs" link={LINKS.GITHUB_WEBSITE} altText="Github Logo"/>
     </Container>
   )
 }
