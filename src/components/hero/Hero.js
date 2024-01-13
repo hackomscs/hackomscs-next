@@ -9,7 +9,7 @@ import StartButton from './StartButton';
 
 //import Sparkles from '../../components/Sparkles';
 
-import DarkModeToggle from '../../components/shared/DarkModeToggle';
+import MailingList from '../../components/support/MailingList';
 import RegisterButton from '../../components/support/RegisterButton';
 
 import ThemeContext from '../../context/ThemeContext';
@@ -323,8 +323,8 @@ export default function Hero() {
               <SupplementalText>Georgia Tech OMSCS&apos;s First Ever Hackathon.</SupplementalText>
               <ButtonContainer>
                 <RegisterButton />
+                {/* <MailingList /> */}
               </ButtonContainer>
-              
             </WelcomeContent>
             <TowerDiv>
               <Tower className="tower-img" src="svg/tower.svg" />

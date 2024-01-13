@@ -34,11 +34,11 @@ const Text = styled.div`
   font-size: 30px;
   font-weight: 600;
 `
-
+//href ="https://my.mlh.io/oauth/authorize?client_id=LO02M-OMjyeeqM8smtZhOgFF-IHAxtw_nzpr_4T1lHs&redirect_uri=https%3A%2F%2Fhackomscs.com%2Fmymlh-callback&response_type=token"
 function RegisterButton() {
   return (
-    <Button href ="https://my.mlh.io/oauth/authorize?client_id=LO02M-OMjyeeqM8smtZhOgFF-IHAxtw_nzpr_4T1lHs&redirect_uri=https%3A%2F%2Fhackomscs.com%2Fmymlh-callback&response_type=token">
-      <Text>Register Now!</Text>
+    <Button>
+      <Text>Coming Soon</Text>
     </Button>
   )
 }

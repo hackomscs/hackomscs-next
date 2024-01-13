@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import Hero from '../components/hero/Hero';
 import Hackathons from '../components/hackathons/Hackathons';
+import AboutUs from '../components/about/AboutUs';
 import Team from '../components/team/Team';
 import Support from '../components/support/Support';
 import Sponsors from '../components/sponsors/Sponsors';
@@ -18,6 +19,7 @@ export default function Main() {
   return (
     <Container>
       <Hero />
+      <AboutUs />
       <Hackathons />
       <Team />
       <Support />

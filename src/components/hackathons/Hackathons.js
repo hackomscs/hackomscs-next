@@ -37,7 +37,7 @@ export default function Hackathons() {
     {
       button: 'What is hackOMSCS?',
       panel:
-        'HackOMSCS is a 24-hour virtual hackathon taking place in January 2024 (Date TBD). HackOMSCS is free to register and participate. It is entirely student run, and open to anyone!',
+        'HackOMSCS is a 24-hour virtual hackathon taking place May 24th-25th 2024. HackOMSCS is free to register and participate. It is entirely student run, and open to all Georgia Tech Students!',
       uuid: 'id1',
     },
     {

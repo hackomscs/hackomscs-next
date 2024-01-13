@@ -1,15 +1,17 @@
 const officers = [
   { name: 'Peter A', team: 'San Diego, CA' },
   { name: 'Anthony O', team: 'Pasedena, CA' },
+  { name: 'Giang P', team: 'Seattle, WA' },
+  { name: 'Elan G', team: 'Atlanta, GA' },
   { name: 'Cherie L', team: 'Atlanta, GA' },
+  { name: 'Animita S', team: 'Austin, TX' },
+  { name: 'Austin B', team: 'Philadelphia, PA' },
   { name: 'John C', team: 'Waterloo, CAN' },
-  { name: 'Saeeda C', team: '' },
-  { name: 'Danh P', team: '' },
-  { name: 'Vishrut G', team: '' },
-  { name: 'Nikhil K', team: '' },
-  { name: 'Sam T', team: '' },
-  { name: 'Animita S', team: '' },
-  { name: 'Sid L', team: '' },
+  { name: 'Mohit K', team: 'Berlin, GER' },
+  { name: 'Jonathan R', team: 'San Diego, CA' },
+  { name: 'Kayla S', team: 'Philadelphia, PA' },
+  { name: 'Sam T', team: 'Chicago, Il' },
+  { name: 'Saeeda C', team: 'Graphic Design' },
 ];
 
 export default officers;
