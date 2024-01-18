@@ -7,8 +7,6 @@ const officers = [
   { name: 'Animita S', team: 'Austin, TX' },
   { name: 'Austin B', team: 'Philadelphia, PA' },
   { name: 'John C', team: 'Waterloo, CAN' },
-  { name: 'Mohit K', team: 'Berlin, GER' },
-  { name: 'Jonathan R', team: 'San Diego, CA' },
   { name: 'Kayla S', team: 'Philadelphia, PA' },
   { name: 'Sam T', team: 'Chicago, Il' },
   { name: 'Saeeda C', team: 'Graphic Design' },
