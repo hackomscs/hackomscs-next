@@ -120,7 +120,7 @@ const WelcomeContent = styled.div`
 
   ${CONSTRAINTS.DEFAULT_BP} {
     text-align: center;
-    padding-top: 0px;
+    padding-top: 30px;
     .mobileImg {
       display: unset;
     }
@@ -207,7 +207,7 @@ padding-right:150px;
 display: flex;
 flex-direction: column;
 align-items: center;
-height:100%;
+width:50%;
 z-index: 2;
 
 .tower-img {
