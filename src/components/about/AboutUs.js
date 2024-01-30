@@ -101,7 +101,7 @@ export default function AboutUs() {
       <Header title="About Us" givenId="about" />
       <Grid>
       <Quote>
-        &quot;You made the function. You passed the tests. Now it's time to show off your hacks!&quot;
+        &quot;You made the function. You passed the tests. Now it&apos;s time to show off your hacks!&quot;
       </Quote>
         {/* <ImageContainer>
           <TeamImage src={default_group} objectFit="cover" layout="fill" alt="a team picture of the HackUTD organizers" />
