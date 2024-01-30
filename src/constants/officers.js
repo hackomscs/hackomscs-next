@@ -1,6 +1,7 @@
 const officers = [
+  { name: 'Firat T', team: 'Los Angeles, CA'},
   { name: 'Peter A', team: 'San Diego, CA' },
-  { name: 'Anthony O', team: 'Pasedena, CA' },
+  { name: 'Anthony O', team: 'Los Angeles, CA' },
   { name: 'Giang P', team: 'Seattle, WA' },
   { name: 'Elan G', team: 'Atlanta, GA' },
   { name: 'Cherie L', team: 'Atlanta, GA' },
