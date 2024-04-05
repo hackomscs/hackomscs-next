@@ -21,6 +21,8 @@ run dev server:
     yarn run dev
 
 or on windows:
+    use Node version 20
+    nvm use 20
     npm install
     npm run dev
 

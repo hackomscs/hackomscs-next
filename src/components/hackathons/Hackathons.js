@@ -37,7 +37,7 @@ export default function Hackathons() {
     {
       button: 'What is hackOMSCS?',
       panel:
-        'HackOMSCS is a 24-hour virtual hackathon taking place May 24th-25th 2024. HackOMSCS is free to register and participate. It is entirely student run, and open to all Georgia Tech Students!',
+        'HackOMSCS is a 24-hour virtual hackathon taking place May 18-19th 2024. HackOMSCS is free to register and participate. It is entirely student run, and open to anyone!',
       uuid: 'id1',
     },
     {
@@ -53,10 +53,28 @@ export default function Hackathons() {
       uuid: 'id3',
     },
     {
+      button: 'Why should I participate?',
+      panel:
+        'Have you learned something interesting in your classes that perhaps you\'d like to explore more? Would you like to work on a project to improve your resume? A hackathon is an amazing time to learn and grow! We are also going to be offering some prizes (to be announced!)',
+      uuid: 'id4',
+    },
+    {
+      button: 'What tracks are there going to be?',
+      panel:
+        'To be announced! In our application, we have some ideas of what the tracks are going to be to allow you to maybe think about what you would like to work on.',
+      uuid: 'id5',
+    },
+    {
+      button: 'What are the rules?',
+      panel:
+        'We follow the offical major league hacking rules. https://github.com/MLH/mlh-hackathon-rules/blob/master/Rules.md',
+      uuid: 'id6',
+    },
+    {
       button: 'I don\'t know anyone. How can I join a team?',
       panel:
         'No worries! We will have a team formation event at the start of the hackathon. The maxiumum number is 4 people per team - but you can hack solo if you\'d like!',
-      uuid: 'id4',
+      uuid: 'id7',
     },
     {
       button: 'I have more questions...',

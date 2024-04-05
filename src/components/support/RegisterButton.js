@@ -37,8 +37,8 @@ const Text = styled.div`
 //href ="https://my.mlh.io/oauth/authorize?client_id=LO02M-OMjyeeqM8smtZhOgFF-IHAxtw_nzpr_4T1lHs&redirect_uri=https%3A%2F%2Fhackomscs.com%2Fmymlh-callback&response_type=token"
 function RegisterButton() {
   return (
-    <Button>
-      <Text>Coming Soon</Text>
+    <Button href = "https://forms.gle/1d4WhVDPBobVt6hw7"> 
+      <Text>Apply Now!</Text>
     </Button>
   )
 }
